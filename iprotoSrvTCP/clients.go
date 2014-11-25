@@ -1,4 +1,4 @@
-package iprotoSrvTCPAsync
+package iprotoSrvTCP
 
 import (
 	"sync"
