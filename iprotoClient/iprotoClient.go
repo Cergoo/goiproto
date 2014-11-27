@@ -8,7 +8,6 @@
 
 	(c) 2013 Cergoo (forked from fl00r/go-iproto)
 	under terms of ISC license
-
 */
 package iprotoClient
 
@@ -23,10 +22,9 @@ const chanLen = 10
 type (
 	// Client main struct
 	Client struct {
-		conn      net.Conn         //
-		frameSize uint16           //
-		ChRead    chan *IprotoPack //
-		ChWrite   chan *IprotoPack //
+		conn    net.Conn         //
+		ChRead  chan *IprotoPack //
+		ChWrite chan *IprotoPack //
 	}
 
 	IprotoPack struct {
